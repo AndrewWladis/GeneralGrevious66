@@ -9,6 +9,7 @@ client.on('ready', readyDiscord)
 
 function readyDiscord() {
     console.log('im working')
+    msg.reply('This is where the fun begins');
 }
 
 client.on('message', msg => {
