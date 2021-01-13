@@ -8,8 +8,18 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "discord.js": "^12.5.1"
-  }
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewWladis/GeneralGrevious66.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndrewWladis/GeneralGrevious66/issues"
+  },
+  "homepage": "https://github.com/AndrewWladis/GeneralGrevious66#readme",
+  "description": ""
 }
