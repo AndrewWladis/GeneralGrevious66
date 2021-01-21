@@ -9,28 +9,28 @@ client.on('ready', readyDiscord)
 
 function readyDiscord() {
     console.log('im working')
-    msg.reply('This is where the fun begins!');
 }
 
 function randomResponse(num) {
   if (num == 0) {
-    msg.reply('https://tenor.com/view/intelligent-qui-gon-jin-jar-jar-binks-speak-smart-gif-17180390');
+    return 'https://tenor.com/view/intelligent-qui-gon-jin-jar-jar-binks-speak-smart-gif-17180390';
   } else if (num == 1) {
-    msg.reply('https://tenor.com/view/obi-wan-i-will-do-what-i-must-starwars-gif-11094969');
+    return 'https://tenor.com/view/obi-wan-i-will-do-what-i-must-starwars-gif-11094969';
   } else if (num == 2) {
-    msg.reply('https://tenor.com/view/star-wars-anakin-this-is-where-the-fun-begins-gif-13380207');
+    return 'https://tenor.com/view/star-wars-anakin-this-is-where-the-fun-begins-gif-13380207';
   } else if (num == 3) {
-    msg.reply('https://tenor.com/view/star-wars-obi-wan-hello-there-hi-there-hello-gif-19252932');
+    return 'https://tenor.com/view/star-wars-obi-wan-hello-there-hi-there-hello-gif-19252932';
   } else if (num == 4) {
-    msg.reply('https://tenor.com/view/ive-got-a-really-good-feeling-about-this-solo-a-star-wars-story-gif-15109499');
+    return 'https://tenor.com/view/ive-got-a-really-good-feeling-about-this-solo-a-star-wars-story-gif-15109499';
   } else if (num == 5) {
-    msg.reply('https://tenor.com/view/bad-feeling-han-solo-bad-intuition-gif-13875328');
+    return 'https://tenor.com/view/bad-feeling-han-solo-bad-intuition-gif-13875328';
   } else if (num == 6) {
-    msg.reply('https://tenor.com/view/pew-boba-fett-finger-guns-gif-12677445');
+    return 'https://tenor.com/view/pew-boba-fett-finger-guns-gif-12677445';
   } else if (num == 7) {
-    msg.reply('https://tenor.com/view/the-mandalorian-this-is-the-way-the-way-mandalorian-star-wars-gif-18999449');
+    return 'https://tenor.com/view/the-mandalorian-this-is-the-way-the-way-mandalorian-star-wars-gif-18999449';
   }
 }
+
 
 client.on('message', msg => {
     if (msg.content.toLowerCase() === 'hello there') {
@@ -64,6 +64,6 @@ client.on('message', msg => {
       msg.reply("Something far worse has happened to you");
     }
     else if (msg.content.toLowerCase() === 'holocron') {
-      randomResponse(Math.floor(Math.random() * 8))
+      msg.reply(randomResponse(Math.floor(Math.random() * 8)));
     }
 });
