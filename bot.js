@@ -9,11 +9,11 @@ client.on('ready', readyDiscord)
 
 function readyDiscord() {
     console.log('im working')
-    msg.reply('This is where the fun begins');
+    msg.reply('This is where the fun begins!');
 }
 
 function randomResponse(num) {
-  if (num = 0) {
+  if (num == 0) {
     msg.reply('https://tenor.com/view/intelligent-qui-gon-jin-jar-jar-binks-speak-smart-gif-17180390');
   } else if (num == 1) {
     msg.reply('https://tenor.com/view/obi-wan-i-will-do-what-i-must-starwars-gif-11094969');
@@ -63,8 +63,7 @@ client.on('message', msg => {
     else if (msg.content.toLowerCase() === 'look at how old you have become') {
       msg.reply("Something far worse has happened to you");
     }
-    else if (msg.content.toLowerCase() === 'random quote') {
-      let number = Math.floor(Math.random() * 8)
-      randomResponse(number)
+    else if (msg.content.toLowerCase() === 'holocron') {
+      randomResponse(Math.floor(Math.random() * 8))
     }
 });
