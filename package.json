@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord-image-generation": "^1.4.7",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndrewWladis/GeneralGrevious66.git"
