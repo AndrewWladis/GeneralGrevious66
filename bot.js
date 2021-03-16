@@ -94,10 +94,8 @@ function randomResponse(num) {
 }
 
 function meme() {
-  let meme = document.getElementById('meme');
   let randomNum = Math.floor(Math.random() * 27);
-  console.log()
-  meme.src = `starwarsmemes/${randomNum}.jpeg`
+  msg.reply(`starwarsmemes/${randomNum}.jpeg`);
 }
 
 client.on('message', msg => {
