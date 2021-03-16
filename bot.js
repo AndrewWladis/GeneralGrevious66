@@ -8,94 +8,81 @@ client.login(process.env.BOT_TOKEN);
 client.on('ready', readyDiscord)
 
 function readyDiscord() {
-    console.log('im working')
+  console.log('im working')
 }
 
 function randomResponse(num) {
   if (num == 0) {
     return 'https://tenor.com/view/intelligent-qui-gon-jin-jar-jar-binks-speak-smart-gif-17180390';
   } else if (num == 1) {
-    meme();
+    return 'starwarsmemes/0.jpeg';
   } else if (num == 2) {
     return 'https://tenor.com/view/obi-wan-i-will-do-what-i-must-starwars-gif-11094969';
   } else if (num == 3) {
-    meme();
+    return 'starwarsmemes/1.jpeg';
   } else if (num == 4) {
     return 'https://tenor.com/view/star-wars-anakin-this-is-where-the-fun-begins-gif-13380207';
   } else if (num == 5) {
-    meme();
+    return 'starwarsmemes/2.jpeg';
   } else if (num == 6) {
     return 'https://tenor.com/view/star-wars-obi-wan-hello-there-hi-there-hello-gif-19252932';
   } else if (num == 7) {
     return 'https://tenor.com/view/ive-got-a-really-good-feeling-about-this-solo-a-star-wars-story-gif-15109499';
   } else if (num == 8) {
-    meme();
+    return 'starwarsmemes/3`.jpeg';
   } else if (num == 9) {
     return 'https://tenor.com/view/bad-feeling-han-solo-bad-intuition-gif-13875328';
   } else if (num == 10) {
     return 'https://tenor.com/view/pew-boba-fett-finger-guns-gif-12677445';
   } else if (num == 11) {
-    meme();
+    return 'starwarsmemes/4.jpeg';
   } else if (num == 12) {
     return 'https://tenor.com/view/the-mandalorian-this-is-the-way-the-way-mandalorian-star-wars-gif-18999449';
   } else if (num == 13) {
-    meme();
+    return 'starwarsmemes/5.jpeg';
   } else if (num == 14) {
-    meme();
+    return 'starwarsmemes/6.jpeg';
   } else if (num == 15) {
-    meme();
+    return 'starwarsmemes/7.jpeg';
   } else if (num == 16) {
-    meme();
+    return 'starwarsmemes/8.jpeg';
   } else if (num == 17) {
-    meme();
+    return 'starwarsmemes/9.jpeg';
   } else if (num == 18) {
-    meme();
+    return 'starwarsmemes/10.jpeg';
   } else if (num == 19) {
-    meme();
+    return 'starwarsmemes/11.jpeg';
   } else if (num == 20) {
-    meme();
+    return 'starwarsmemes/12.jpeg';
   } else if (num == 21) {
-    meme();
+    return 'starwarsmemes/13.jpeg';
   } else if (num == 22) {
-    meme();
+    return 'starwarsmemes/14.jpeg';
   } else if (num == 23) {
-    meme();
+    return 'starwarsmemes/15.jpeg';
   } else if (num == 24) {
-    meme();
+    return 'starwarsmemes/16.jpeg';
   } else if (num == 25) {
-    meme();
+    return 'starwarsmemes/17.jpeg';
   } else if (num == 26) {
-    meme();
+    return 'starwarsmemes/18.jpeg';
   } else if (num == 27) {
-    meme();
+    return 'starwarsmemes/19.jpeg';
   } else if (num == 28) {
-    meme();
+    return 'starwarsmemes/20.jpeg';
   } else if (num == 29) {
-    meme();
+    return 'starwarsmemes/21.jpeg';
   } else if (num == 30) {
-    meme();
+    return 'starwarsmemes/22.jpeg';
   } else if (num == 31) {
-    meme();
+    return 'starwarsmemes/23.jpeg';
   } else if (num == 32) {
-    meme();
+    return 'starwarsmemes/25.jpeg';
   } else if (num == 33) {
-    meme();
+    return 'starwarsmemes/24.jpeg';
   } else if (num == 34) {
-    meme();
-  } else if (num == 35) {
-    meme();
-  } else if (num == 36) {
-    meme();
-  } else if (num == 37) {
-    meme();
-  } else if (num == 38) {
-    meme();
+    return 'starwarsmemes/26.jpeg';
   }
-}
-
-function meme() {
-  let randomNum = Math.floor(Math.random() * 27);
-  msg.reply(`starwarsmemes/${randomNum}.jpeg`);
 }
 
 client.on('message', msg => {
@@ -133,6 +120,6 @@ client.on('message', msg => {
       msg.reply("Something far worse has happened to you");
     }
     else if (msg.content.toLowerCase() === 'darth holocron') {
-      msg.reply(randomResponse(Math.floor(Math.random() * 39)));
+      msg.reply(randomResponse(Math.floor(Math.random() * 34)));
     }
 });
