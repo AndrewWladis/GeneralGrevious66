@@ -49,6 +49,6 @@ client.on('message', msg => {
       msg.reply("Something far worse has happened to you");
     }
     else if (msg.content.toLowerCase() === 'darth holocron') {
-      msg.reply(randomResponse(Math.floor(Math.random() * 27)));
+      msg.reply(randomResponse(Math.floor(Math.random() * 28)));
     }
 });
