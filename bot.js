@@ -13,7 +13,6 @@ function readyDiscord() {
   console.log('im working')
 }
 
-
 function randomResponse(num) {
   let exampleEmbed = new Discord.MessageAttachment(`starwarsmemes/${num}.jpeg`);
   return exampleEmbed;
