@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const DIG = require("discord-image-generation");
+var starwars = require('starwars');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -11,6 +12,7 @@ client.on('ready', readyDiscord)
 function readyDiscord() {
   console.log('im working')
 }
+
 
 function randomResponse(num) {
   let exampleEmbed = new Discord.MessageAttachment(`starwarsmemes/${num}.jpeg`);
