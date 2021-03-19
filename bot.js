@@ -1,7 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const DIG = require("discord-image-generation");
+const cors = require('cors')({ origin: true});
 var starwars = require('starwars');
+const cheerio = require('cheerio');
+const getUrls = require('get-urls');
+const fetch = require('node-fetch');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -50,6 +54,6 @@ client.on('message', msg => {
       msg.reply("Something far worse has happened to you");
     }
     else if (msg.content.toLowerCase() === 'darth holocron') {
-      msg.reply(randomResponse(Math.floor(Math.random() * 28)));
+      msg.reply(randomResponse(Math.floor(Math.random() * 59)));
     }
 });
