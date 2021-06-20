@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.5",
+    "cheerio": "^1.0.0-rc.10",
     "cors": "^2.8.5",
     "discord-image-generation": "^1.4.7",
     "discord.js": "^12.5.1",
