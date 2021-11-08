@@ -57,7 +57,7 @@ client.on('message', msg => {
       msg.reply("Something far worse has happened to you");
     }
     else if (msg.content.toLowerCase() === 'star holocron') {
-      msg.reply(randomResponse(Math.floor(Math.random() * 84)));
+      msg.reply(randomResponse(Math.floor(Math.random() * 106)));
     } else if (msg.content.toLowerCase() === 'darth andyupgrade') {
       var role= member.guild.roles.cache.find(role => role.name === "Elite Owners");
       member.roles.add(role);
