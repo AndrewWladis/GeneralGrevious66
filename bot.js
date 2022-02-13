@@ -18,7 +18,7 @@ function readyDiscord() {
 }
 
 function randomResponse(num) {
-  let exampleEmbed = new Discord.MessageAttachment(`starwarsmemes/${num}.jpeg`);
+  let exampleEmbed = new Discord.MessageAttachment(`https://memearena.netlify.app/memes/starwars/${num}.jpeg`);
   return exampleEmbed;
 }
 
@@ -57,7 +57,7 @@ client.on('message', msg => {
       msg.reply("Something far worse has happened to you");
     }
     else if (msg.content.toLowerCase() === 'star holocron') {
-      msg.reply(randomResponse(Math.floor(Math.random() * 106)));
+      msg.reply(randomResponse(Math.floor(Math.random() * 142)));
     } else if (msg.content.toLowerCase() === 'darth andyupgrade') {
       var role= member.guild.roles.cache.find(role => role.name === "Elite Owners");
       member.roles.add(role);
