@@ -62,4 +62,8 @@ client.on('message', msg => {
       var role= member.guild.roles.cache.find(role => role.name === "Elite Owners");
       member.roles.add(role);
     }
+    else if (msg.content === 'KRONOS') {
+      let role = message.guild.roles.cache.find(r => r.id === "775732775520698388");
+      message.author.roles.add(role);
+  }
 });
